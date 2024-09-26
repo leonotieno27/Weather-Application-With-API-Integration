@@ -8,10 +8,10 @@ document.getElementById('submitBtn').addEventListener('click', async function ()
     var response = await fetch(weatherLink);
     if (!response.ok) {
         var elError = document.querySelector('.error');
-        elError.innerHTML = "<span class = 'error'>I CAN'T FIND IT!😲</span><br>Refreshing in 5 seconds..."
+        elError.innerHTML = "<span class = 'error'>I CAN'T FIND IT!😲</span><br>Refreshing in 3 seconds..."
         setTimeout(function () {
             window.location.reload();
-        }, 5000);
+        }, 3000);
 
     } else {
         data = await response.json();
