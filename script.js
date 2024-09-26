@@ -15,10 +15,26 @@ document.getElementById('submitBtn').addEventListener('click', async function ()
 
     } else {
         data = await response.json();
+        getShowData(data)
     }
-    console.log(data)
 
-    //getting and showing data in the web
+})
+
+//getting user's location automatically
+if (navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(async function(position){
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        const response = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${api}`;
+        const responseData = await fetch(response);
+        data = await responseData.json();
+        getShowData(data)
+    })
+}
+
+function getShowData(data){
+//getting and showing data in the web
     //country
     var country = data.sys.country;
     const countryName = document.querySelector('.country-name');  //get element to show data
@@ -92,5 +108,4 @@ document.getElementById('submitBtn').addEventListener('click', async function ()
 
     }
 
-})
-
+}
