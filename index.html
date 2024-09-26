@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <!--header details-->
+  <head>
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--the body-->
+  <body>
+    <h1 class="text-header">WEATHER APPLICATION</h1>
+    <br />
+    <br />
+    <h2 class="text-normal">ENTER NAME OF CITY</h2>
+    <input type="text" class="input-bar" id="city-input" /><br />
+    <!--button-->
+    <div class="btn-dimensions">
+      <button type="button" class="btn-submit" id="submitBtn">SUBMIT</button>
+    </div>
+    <!--details of the weather of city chosen
+        to be visible on button click-->
+    <div class="error">
+      <div class="upper-container" style="display: flex">
+        <div class="text">
+          <!--name,temp,description-->
+          <div class="country-name"></div>
+          <div class="temp"></div>
+          <div class="city-name"></div>
+        </div>
+        <div class="text2">
+          <div class="weather-desc"></div>
+          <div class="emoji"></div>
+        </div>
+      </div>
+      <div class="lower-container">
+        <!--humidity etc-->
+        <div class="humidity"></div>
+        <div class="pressure"></div>
+        <div class="wind-speed"></div>
+        <div class="sea-level"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

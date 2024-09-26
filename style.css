@@ -1,0 +1,101 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)),
+    url("assets/weather-bakground.jpg");
+background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.text-header {
+  color: white;
+  size: 10px;
+  font-size: 40px;
+}
+.text-normal {
+  color: white;
+  size: 10px;
+  font-size: 20px;
+}
+.input-bar {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(102, 98, 98, 0.5);
+  color: white;
+  font-size: 26px;
+}
+.btn-dimensions{
+    padding-top: 10px;
+}
+
+.btn-submit{
+    width: 120px;
+    height: 33px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+.weather-name{
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+}
+
+/*upper container */
+
+.upper-container{
+  padding-top: 2em;
+  padding-left: 150px;
+  color: white;
+}
+
+.text{
+  padding-left:17em;
+}
+
+.country-name{
+  font-size: 50px;
+  color: white;
+}
+
+.temp{
+  font-size: 35px;
+  color: white;
+}
+
+.city-name{
+  font-size: 25px;
+  color: white;
+}
+
+/*upper second container */
+.text2{
+  padding-left: 12em;
+  padding-top: .2em;
+}
+
+.lower-container{
+  padding-top: 1em;
+}
+.weather-desc{
+  font-size: 25px;
+  color: white;
+}
+.emoji{
+  padding-top: 0%;
+  font-size: 50px;
+}
+
+.humidity, .pressure, .winds-speed, .sea-level, .speed, .degrees{
+  font-size: 25px;
+  color: white;
+  padding-top: .4em;
+}
+
+.error{
+  color: white;
+  font-size: 15px;
+}
