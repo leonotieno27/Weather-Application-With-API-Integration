@@ -43,7 +43,7 @@ function getShowData(data){
     //temp
     var temp = data.main.temp;
     const tempdata = document.querySelector('.temp');  //get element to show data
-    tempdata.textContent = temp + ' °C'; //show data
+    tempdata.textContent = temp + ' K'; //show data
 
     //city
     var name = data.name;
